@@ -16,6 +16,12 @@ class Style{
   static const TextStyle text16 =
       TextStyle(color: textClr, fontSize: 16.0, fontFamily: 'Regular');
 
+  static const TextStyle text16b =
+      TextStyle(color: textClr, fontSize: 16.0, fontFamily: 'SemiBold');
+  
+  static const TextStyle textPrimary16b =
+      TextStyle(color: primaryClr, fontSize: 16.0, fontFamily: 'SemiBold');
+
   static const TextStyle textLight18 =
       TextStyle(color: textLightClr, fontSize: 18.0, fontFamily: 'Regular');
   

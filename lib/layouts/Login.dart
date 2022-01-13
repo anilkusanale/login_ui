@@ -25,7 +25,7 @@ class _LoginState extends State<Login> {
               children: [
                 SizedBox(height: 70.0),
                 Text(
-                  "Welcome Back!",
+                  "Welcome Back",
                   style: Style.text25b,
                 ),
                 Text(
@@ -82,7 +82,77 @@ class _LoginState extends State<Login> {
                     SizedBox(
                       height: 30.0,
                     ),
-                    Text("---- or continue with ----",style: Style.textLight16,)
+                    Text("---- or continue with ----",style: Style.textLight16,),
+                    SizedBox(height: 20.0,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        InkWell(
+                          onTap : (){},
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(color: Style.grayClr),
+                              borderRadius: BorderRadius.circular(8.0)
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(14.0),
+                              child: Image(
+                                image: AssetImage("assets/icons/facebook.png"),
+                                width: 35.0,
+                                color: Color(0xff4267B2),
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 15.0,),
+                        InkWell(
+                          onTap : (){},
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(color: Style.grayClr),
+                              borderRadius: BorderRadius.circular(8.0)
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(19.0),
+                              child: Image(
+                                image: AssetImage("assets/icons/google.png"),
+                                width: 25.0,
+                                color: Color(0xffdb3236),
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 15.0,),
+                        InkWell(
+                          onTap : (){},
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(color: Style.grayClr),
+                              borderRadius: BorderRadius.circular(8.0)
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(19.0),
+                              child: Image(
+                                image: AssetImage("assets/icons/twitter.png"),
+                                width: 25.0,
+                                color : Color(0xff00acee)
+                              ),
+                            ),
+                          ),
+                        )
+                    ],),
+                    SizedBox(height: 30.0,),
+                    Row(
+                      mainAxisAlignment : MainAxisAlignment.center,
+                      children: [
+                        Text("Not a Member ?",style: Style.text16b,),
+                        SizedBox(width: 10.0,),
+                        Text("Register Now", style: Style.textPrimary16b,),
+                      ],
+                    )
                   ],
                 ))
               ],
